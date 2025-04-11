@@ -2,7 +2,8 @@
 #Made by ArnauForrellat
 #Read the following script and explain the output of each line and answer the questions:
 
-CRACK="oriolorioloriol"  
+#CRACK="oriolorioloriol"  
+
 
 echo "The result of ##*ori is" ${CRACK##*ori} #Deletes everything up to the last time ori appears in the chain.
 echo "The result of #*ori is" ${CRACK#*ori} #Eliminates everything up to the first time ori appears.
@@ -16,4 +17,12 @@ echo "The result of %ori* is" ${CRACK%ori*} #Eliminates everything from the firs
 #The operator % removes the shortest match from the end of string
 
 #How can these techniques be useful in Bash scripts?
+#Is useful parisng filenames, extrating values, cleaning up path, logs or strings and automation scripting.
+
+#Try modifying the value of CRACK and observe how the output changes.
+#CRACK="arnauorioloriol"
+#The result of ##*ori is ol
+#The result of #*ori is oloriol
+#The result of %%ol* is arnauori
+#The result of %ori* is arnauoriol
 
