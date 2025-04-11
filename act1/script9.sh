@@ -2,7 +2,7 @@
 #Made by ArnauForrellat
 #Read the following script and explain the output of each line and answer the questions:
 
-#CRACK="oriolorioloriol"  
+CRACK="oriolorioloriol"  
 
 
 echo "The result of ##*ori is" ${CRACK##*ori} #Deletes everything up to the last time ori appears in the chain.
